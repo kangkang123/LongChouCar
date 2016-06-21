@@ -65,11 +65,15 @@
 
                 <RadioButton
                     android:id="@+id/rb_custom_service"
-                    android:layout_width="45dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/kf"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
                     android:button="@null"
-                    android:gravity="bottom|center_horizontal"
+                    android:drawableTop="@drawable/server"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="客服"
                     android:textColor="@drawable/select_text_color"
                     android:textSize="10.0sp" />
 
