@@ -137,8 +137,11 @@ public class Constant {
 	//注册时的城市
 	public static String RequestRegisterCity=url+"app/api/city/getAllCity";
 
-	//
+	//维保记录
 	public static String RequestMaintenance=url+"maintenance/";
+
+	//积分
+	public static String RequestScore=url+"app/api/u/v1.0/point/index?";
 	
 //	public static String RequestNotifyUrl=url+"weixinPaySuccess/orderNo=";
 	

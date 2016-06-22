@@ -25,12 +25,12 @@ public class MyScore {
 	//积分详情
 	public class ScoreDetail{
 		//增（减）量
-		public String amount;
+		public String pointAmount;
 		//日期
 		public String date;
 		//增/减积分 （increase、decrease）
-		public String operate;
+		public String typeName;
 		//积分增减方式
-		public String way;
+		public String description;
 	}
 }

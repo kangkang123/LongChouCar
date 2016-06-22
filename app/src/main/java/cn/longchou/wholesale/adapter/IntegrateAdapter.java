@@ -63,13 +63,13 @@ public class IntegrateAdapter extends BaseAdapter{
 		}
 		
 		ScoreDetail item = getItem(position);
-		holder.source.setText(item.way);
-		holder.score.setText(item.amount);
+		holder.source.setText(item.description);
+		holder.score.setText(item.pointAmount);
 		holder.time.setText(item.date);
-		if("decrease".equals(item.operate))
+		if("支出".equals(item.typeName))
 		{
 			holder.mark.setText("-");
-		}else if("increase".equals(item.operate))
+		}else if("收入".equals(item.typeName))
 		{
 			holder.mark.setText("+");
 		}

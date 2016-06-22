@@ -67,9 +67,10 @@ public class IntegrationActivity extends BaseActivity {
 	}
 
 	private void getServerData() {
-		String token = PreferUtils.getString(getApplicationContext(), "token", null);
+//		String token = PreferUtils.getString(getApplicationContext(), "token", null);
+		String token= "df43e07927c1e46a9649f9b56f8f812c";
 		HttpUtils http=new HttpUtils();
-		String url = Constant.RequestSocre;
+		String url = Constant.RequestScore;
 		RequestParams params=new RequestParams();
 		params.addBodyParameter("Token", token);
 		http.send(HttpMethod.POST, url, params, new RequestCallBack<String>() {
@@ -98,7 +99,7 @@ public class IntegrationActivity extends BaseActivity {
 		MyScore score = gson.fromJson(result, MyScore.class);
 		
 		mAvailIntegration.setText(score.avaliable+"");
-		mFreezeIntegration.setText(score.freze+"");
+		mFreezeIntegration.setText("0");
 		
 		List<ScoreDetail> listDetail = score.detail;
 		
