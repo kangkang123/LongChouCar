@@ -65,7 +65,7 @@ public class IntegrateAdapter extends BaseAdapter{
 		ScoreDetail item = getItem(position);
 		holder.source.setText(item.description);
 		holder.score.setText(item.pointAmount);
-		holder.time.setText(item.date);
+		holder.time.setText(item.createTimeStr);
 		if("支出".equals(item.typeName))
 		{
 			holder.mark.setText("-");

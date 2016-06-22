@@ -27,7 +27,7 @@ public class MyScore {
 		//增（减）量
 		public String pointAmount;
 		//日期
-		public String date;
+		public String createTimeStr;
 		//增/减积分 （increase、decrease）
 		public String typeName;
 		//积分增减方式
